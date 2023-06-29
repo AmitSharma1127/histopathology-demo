@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 96 104" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="paint1_linear" x1="53.3761" y1="113.413" x2="125.385" y2="30.6507" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.998217, 0, 0, 0.969782, 1.327914, 13.308733)">
+      <stop stop-color="#F80759"/>
+      <stop offset="1" stop-color="#BC4E9C"/>
+    </linearGradient>
+  </defs>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M 44.224 14.28 L 54.196 14.28 C 70.721 14.28 84.116 27.304 84.116 43.374 L 84.116 53.072 C 84.116 69.139 70.721 82.165 54.196 82.165 L 44.224 82.165 C 27.697 82.165 14.303 69.139 14.303 53.072 L 14.303 43.374 C 14.303 27.304 27.697 14.28 44.224 14.28 Z" fill="url(#paint1_linear)" style=""/>
+  <rect x="30.315" y="52.242" width="12.324" height="12.733" style="stroke: rgb(255, 255, 255);" bx:origin="2.257 -0.5"/>
+  <rect x="54.964" y="52.242" width="12.324" height="12.733" style="stroke: rgb(255, 255, 255);" bx:origin="0.257 -0.5"/>
+  <rect x="42.639" y="26.776" width="12.324" height="12.733" style="stroke: rgb(255, 255, 255);" bx:origin="1.257 1.5"/>
+  <polyline points="61.127 52.242 61.127 45.876 36.478 45.876 36.478 52.242" style="stroke: rgb(255, 255, 255);" bx:origin="0.879 0"/>
+  <line x1="48.802" y1="45.876" x2="48.802" y2="39.51" style="stroke: rgb(255, 255, 255);" bx:origin="0 1"/>
+</svg>

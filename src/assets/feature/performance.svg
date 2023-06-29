@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 95 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint1_linear" x1="52.4132" y1="113.413" x2="124.413" y2="30.5868" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.316978, 0, 0, 1.328646, -14.557794, 3.482811)">
+      <stop stop-color="#F80759"/>
+      <stop offset="1" stop-color="#BC4E9C"/>
+    </linearGradient>
+  </defs>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M 40.756 4.812 L 53.926 4.812 C 75.745 4.812 93.435 22.658 93.435 44.671 L 93.435 57.958 C 93.435 79.97 75.745 97.817 53.926 97.817 L 40.756 97.817 C 18.935 97.817 1.247 79.97 1.247 57.958 L 1.247 44.671 C 1.247 22.658 18.935 4.812 40.756 4.812 Z" fill="url(#paint1_linear)" style=""/>
+  <path class="cls-1" d="M 69.452 29.608 L 69.452 75.853 L 25.313 75.853 L 25.313 64.3 L 27.883 64.3 L 27.883 52.841 L 25.313 52.841 L 25.313 41.164 L 30.221 34.236 L 30.221 24.983 L 64.545 24.983 L 69.452 29.608 Z" style="stroke-miterlimit: 10; stroke-width: 1.91px; fill: rgb(255, 255, 255);"/>
+  <line class="cls-1" x1="40.035" y1="24.983" x2="40.035" y2="34.236" style="stroke-miterlimit: 10; stroke-width: 1.91px; fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);"/>
+  <line class="cls-1" x1="49.824" y1="24.983" x2="49.824" y2="34.236" style="stroke-miterlimit: 10; stroke-width: 1.91px; fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);"/>
+  <line class="cls-1" x1="59.637" y1="24.983" x2="59.637" y2="34.236" style="stroke-miterlimit: 10; stroke-width: 1.91px; fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);"/>
+  <line class="cls-1" x1="37.568" y1="64.3" x2="57.197" y2="64.3" style="stroke-miterlimit: 10; stroke-width: 1.91px; fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);"/>
+</svg>

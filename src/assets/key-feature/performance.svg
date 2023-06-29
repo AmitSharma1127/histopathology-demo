@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 96 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter0_d" x="0.990112" y="9" width="94.9524" height="95" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="13"/>
+      <feGaussianBlur stdDeviation="10.5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.898039 0 0 0 0 0.117647 0 0 0 0 0.435294 0 0 0 0.3 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="52.5978" y1="102.635" x2="107.605" y2="39.4138" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F80759"/>
+      <stop offset="1" stop-color="#BC4E9C"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="53.3761" y1="113.413" x2="125.385" y2="30.6507" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.998217, 0, 0, 0.969782, -0.350009, 13.838739)">
+      <stop stop-color="#F80759"/>
+      <stop offset="1" stop-color="#BC4E9C"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#filter0_d)" style="" transform="matrix(0.998217, 0, 0, 0.969782, -0.350007, 13.83874)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M48.4664 16.9999C63.0887 16.9999 74.9425 28.8644 74.9425 43.4999C74.9425 58.1353 63.0887 69.9999 48.4664 69.9999C33.8439 69.9999 21.9901 58.1353 21.9901 43.4999C21.9901 28.8644 33.8439 16.9999 48.4664 16.9999Z" fill="#FF4361"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M48.4664 16.9999C63.0887 16.9999 74.9425 28.8644 74.9425 43.4999C74.9425 58.1353 63.0887 69.9999 48.4664 69.9999C33.8439 69.9999 21.9901 58.1353 21.9901 43.4999C21.9901 28.8644 33.8439 16.9999 48.4664 16.9999Z" fill="url(#paint0_linear)"/>
+  </g>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M 42.546 14.81 L 52.518 14.81 C 69.043 14.81 82.438 27.834 82.438 43.904 L 82.438 53.602 C 82.438 69.669 69.043 82.695 52.518 82.695 L 42.546 82.695 C 26.019 82.695 12.625 69.669 12.625 53.602 L 12.625 43.904 C 12.625 27.834 26.019 14.81 42.546 14.81 Z" fill="#FF4361" style=""/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M 42.546 14.81 L 52.518 14.81 C 69.043 14.81 82.438 27.834 82.438 43.904 L 82.438 53.602 C 82.438 69.669 69.043 82.695 52.518 82.695 L 42.546 82.695 C 26.019 82.695 12.625 69.669 12.625 53.602 L 12.625 43.904 C 12.625 27.834 26.019 14.81 42.546 14.81 Z" fill="url(#paint1_linear)" style=""/>
+  <g id="roll_brush" data-name="roll brush" transform="matrix(1.915776, 0, 0, 1.82743, 25.093689, 26.842316)" style="">
+    <polygon class="cls-1" points="22.51 8.17 22.51 22.55 8.12 22.55 8.12 15.84 15.79 15.84 15.79 8.17 22.51 8.17" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="14.83" y1="1.45" x2="16.75" y2="1.45" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="14.83" y1="5.29" x2="16.75" y2="5.29" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="4.28" y1="15.84" x2="6.2" y2="15.84" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="0.45" y1="15.84" x2="2.37" y2="15.84" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="0.45" y1="12" x2="2.37" y2="12" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="0.45" y1="8.17" x2="2.37" y2="8.17" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="0.45" y1="4.33" x2="2.37" y2="4.33" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="0.45" y1="1.45" x2="2.37" y2="1.45" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="3.33" y1="1.45" x2="5.24" y2="1.45" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="7.16" y1="1.45" x2="9.08" y2="1.45" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+    <line class="cls-1" x1="11" y1="1.45" x2="12.92" y2="1.45" style="stroke-miterlimit: 10; stroke-width: 1.92px; stroke: rgb(255, 255, 255);"/>
+  </g>
+</svg>
