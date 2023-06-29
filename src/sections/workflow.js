@@ -10,27 +10,27 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
+    title: 'Annotation',
+    text:
+      'Annotate the Whole Slide with one label that tells us the label of the tumor subtype',
+  },
+  {
+    id:2,
     title: 'WSI to patches',
     text:
       'Take WSI as input and generate patches of size 16x16 pixels.',
   },
   {
-    id: 2,
-    title: 'Assembly retrieves funds from your account',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-  },
-  {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Patches to features',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Extract features from the patches using a pre-trained CNN model. We employ a famous CNN model called ResNet-50 model.',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Features to predictions',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Use the extracted features to fine-tune the classifier on our own dataset.',
   },
 ];
 

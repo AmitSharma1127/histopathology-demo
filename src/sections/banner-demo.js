@@ -9,7 +9,9 @@ import SectionHeader from '../components/section-header';
 
 export default function Banner() {
   return (
-    <section sx={styles.banner} id="home">
+    <section style={{
+      minHeigh: '55vh',
+    }} sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
@@ -30,6 +32,7 @@ const styles = {
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
+    minHeight: ['auto', null, null, null, null, '100vh', '100vh'],
     '&::before': {
       position: 'absolute',
       content: '""',
@@ -42,8 +45,6 @@ const styles = {
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
       backgroundSize: '36%',
-      // minHeight: ['auto', null, null, null, null, '100vh', '100vh'],
-
     },
     '&::after': {
       position: 'absolute',
