@@ -29,6 +29,7 @@ export default function IndexPage() {
           <CoreFeature />
           <WorkFlow />
           <TestimonialCard />
+          <BlogSection />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

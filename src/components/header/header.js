@@ -3,7 +3,7 @@ import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoDark from 'assets/iiit_logo.png';
+import LogoDark from 'assets/collaboraters/iiit.png';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
@@ -11,25 +11,35 @@ import { useRouter } from 'next/router';
 
 export default function Header({ className }) {
   const router = useRouter();
+  const isDemoPage = router.pathname === '/demo';
+  console.log(isDemoPage);
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
           <Logo src={LogoDark} sx={{
-            width: '125px', 
+            width: '70px', 
           }} />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
                 activeClass="active"
-                to={path}
+                // if demo page, prefix home path
+                to={isDemoPage ? '/#' + path : path}
+                onClick={() => {
+                  if (isDemoPage) {
+                    router.push('/#' + path);
+                  }
+                }}
+                // to={path}
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={isDemoPage ? -100 : -70} // Adjust the offset value as needed
                 duration={500}
                 key={i}
               >
+                {console.log(path)}
                 {label}
               </Link>
             ))}

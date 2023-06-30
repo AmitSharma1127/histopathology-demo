@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/wsi/CLAM2.jpg';
+import BannerImg from 'assets/wsi/CLAM2-.png';
 import ShapeLeft from 'assets/shape-left-pink.png';
 import ShapeRight from 'assets/shape-right-pink.png';
 

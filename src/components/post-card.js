@@ -8,6 +8,7 @@ export default function PostCard({
   title,
   authorName,
   date,
+  url,
 }) {
   return (
     <Box sx={styles.card}>
@@ -23,7 +24,9 @@ export default function PostCard({
         </Heading>
 
         <Flex sx={styles.postFooter}>
-          <Text sx={styles.postFooter.name}>{authorName}</Text>
+          <Text sx={styles.postFooter.name}  onClick={() => {
+            window.open(url, '_blank');
+          } }>{authorName}</Text>
           <Text sx={styles.postFooter.date}>{date}</Text>
         </Flex>
       </Flex>
@@ -41,14 +44,20 @@ const styles = {
     '&:hover': {
       boxShadow: '0px 5px 20px rgba(38,78,118,0.15)',
     },
+    minHeight: ['auto', null, null, null, '400px'],
   },
 
   thumbnail: {
     borderRadius: '7px 7px 0 0',
+    justifyContent: 'center',
     overflow: 'hidden',
     display: 'flex',
     img: {
       width: '100%',
+      minHeight: ['200px', null, null, null, '300px', '260px'],
+      maxHeight: ['200px', null, null, null, '300px', '260px'],
+      maxWidth: 'fit-content',
+      minWidth: 'fit-content',
     },
   },
   postContent: {
@@ -63,6 +72,7 @@ const styles = {
     fontWeight: 700,
     mb: [3, 4, 5],
     pr: [0, null, null, null, 5],
+    minHeight: ['auto', null, null, null, '100px'],
   },
   postFooter: {
     width: '100%',
@@ -73,7 +83,15 @@ const styles = {
       fontWeight: 500,
       color: 'primary',
       lineHeight: 1.4,
+      bottom: '0px',
+      cursor: 'pointer',
+      '&:hover': {
+        color: 'secondary',
+        transition: 'all 0.3s',
+        textDecoration: 'underline',
+      }
     },
+    bottom: '0px',
     date: {
       fontSize: ['14px', null, 2],
       fontWeight: 400,

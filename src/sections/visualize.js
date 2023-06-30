@@ -12,18 +12,25 @@ const data = [
   // Feature data...
 ];
 
-export default function Visualize({ onFilenameChange }) {
-  const [images, setImages] = useState('IN Brain-0001.tiff');
+export default function Visualize({ onFilenameChange, onTaskChange }) {
+  const [images, setImages] = useState('IN Brain-0002.tiff');
+  const [selectedTask, setSelectedTask] = useState('LGG vs HGG Classification');
   const baseURL = 'http://127.0.0.1:5000/';
   const [iframeURL, setIframeURL] = useState(baseURL + images);
 
   const filenames = [
-    'IN Brain-0001.tiff',
-    'IN Brain-0007.tiff',
-    'IN Brain-0011.tiff',
-    'IN Renal-0032.tiff',
-    'IN Renal-0020.tiff',
+    'IN Brain-0002.tiff',
+    'IN Brain-0015.tiff',
+    'IN Brain-0020.tiff',
+    'IN Renal-0030.tiff',
+    'IN Renal-0109.tiff',
   ];
+
+  const tasks = [
+    "LGG vs HGG Classification",
+    "Subtype Classification",
+    "IDH Mutation Classification",
+  ]
 
   const handleImageChange = (event) => {
     const selectedImage = event.target.value;
@@ -31,6 +38,12 @@ export default function Visualize({ onFilenameChange }) {
     setImages(selectedImage);
     setIframeURL(baseURL + encodedFileName);
     onFilenameChange(selectedImage); // Call the callback function with the selected filename
+  };
+
+  const handleTaskChange = (event) => {
+    const selectedTask = event.target.value;
+    setSelectedTask(selectedTask);
+    onTaskChange(selectedTask);
   };
 
   return (
@@ -46,6 +59,17 @@ export default function Visualize({ onFilenameChange }) {
                 {filenames.map((filename) => (
                   <option value={filename} key={filename}>
                     {filename}
+                  </option>
+                ))}
+              </select>
+            </Box>
+            <br />
+            <Text as="h1">Please select a classification task</Text>
+            <Box sx={styles.textBox}>
+              <select style={styles.select} onChange={handleTaskChange}>
+                {tasks.map((task) => (
+                  <option value={task} key={task}>
+                    {task}
                   </option>
                 ))}
               </select>
@@ -81,13 +105,14 @@ const styles = {
     textAlign: 'center',
   },
   leftColumn: {
-    display: 'flex',
+    display: 'block',
     flexDirection: 'column',
     alignItems: 'center',
+    textAlign: 'left',
     justifyContent: 'center',
   },
   textBox: {
-    justifySelf: 'center',
+    justifySelf: 'left',
   },
   select: {
     cursor: 'pointer',
@@ -98,6 +123,7 @@ const styles = {
     border: '1px solid #ddd',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     fontSize: '16px',
+    minWidth: '300px',
   },
   rightColumn: {
     display: 'flex',

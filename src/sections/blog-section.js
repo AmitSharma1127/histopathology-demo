@@ -5,47 +5,38 @@ import SectionHeader from 'components/section-header';
 import PostCard from 'components/post-card.js';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-import PostThumb1 from 'assets/blog/1.jpg';
-import PostThumb2 from 'assets/blog/2.jpg';
-import PostThumb3 from 'assets/blog/3.jpg';
+import PostThumb1 from 'assets/collaboraters/iiit.png';
+import PostThumb2 from 'assets/collaboraters/nizam.png';
+import PostThumb3 from 'assets/collaboraters/ihub-2.png';
 
 const data = [
   {
     id: 1,
     imgSrc: PostThumb1,
-    altText: 'Marketing',
+    altText: 'IIIT-H',
     postLink: '#',
-    title: 'Product Marketing: Monopoly Market',
-    authorName: 'Cali Cartel',
-    date: 'Oct 20, 2020',
+    title: 'IIIT Hyderabad',
+    authorName: 'Visit Website',
+    url: 'https://www.iiit.ac.in/',
   },
   {
     id: 2,
     imgSrc: PostThumb2,
-    altText: 'Creative',
+    altText: 'NIMS',
     postLink: '#',
-    title: 'Product Marketing: Creative Market',
-    authorName: 'James Carter',
-    date: 'Oct 20, 2020',
+    title: 'Nizam Institute of Medical Sciences',
+    authorName: 'Visit Website',
+    url: 'https://nims.edu.in/',
   },
   {
     id: 3,
     imgSrc: PostThumb3,
-    altText: 'Startup',
+    altText: 'iHub-Data',
     postLink: '#',
-    title: 'Product Marketing: Startup Product Sales',
-    authorName: 'Aston Aagar',
-    date: 'Oct 20, 2020',
-  },
-  {
-    id: 4,
-    imgSrc: PostThumb2,
-    altText: 'Creative',
-    postLink: '#',
-    title: 'Product Marketing: Creative Market',
-    authorName: 'James Carter',
-    date: 'Oct 20, 2020',
-  },
+    title: 'iHub-Data, IIIT Hyderabad',
+    authorName: 'Visit Website',
+    url: 'https://ihub-data.iiit.ac.in/',
+  }
 ];
 
 const responsive = {
@@ -73,11 +64,11 @@ const responsive = {
 
 export default function BlogSection() {
   return (
-    <section sx={{ variant: 'section.news' }}>
+    <section sx={{ variant: 'section.news' }} id="sponsors">
       <Container>
         <SectionHeader
-          slogan="our blog"
-          title="Explore our products for your business solution"
+          slogan="Sponsors"
+          title="This project is a collaboration between the following organizations"
         />
 
         <Box sx={styles.carouselWrapper}>
@@ -90,18 +81,12 @@ export default function BlogSection() {
             containerClass="carousel-container"
             customButtonGroup={<ButtonGroup />}
             dotListClass="test"
-            draggable={true}
+            draggable={false}
             focusOnSelect={false}
             infinite={true}
             itemClass=""
-            keyBoardControl
-            minimumTouchDrag={80}
-            renderButtonGroupOutside
             renderDotsOutside={false}
             responsive={responsive}
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={1}
           >
             {data.map((item) => (
               <PostCard
@@ -112,6 +97,7 @@ export default function BlogSection() {
                 title={item.title}
                 authorName={item.authorName}
                 date={item.date}
+                url={item.url}
               />
             ))}
           </Carousel>

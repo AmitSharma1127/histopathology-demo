@@ -19,12 +19,12 @@ export default [
     path: 'solution',
     label: 'Solution',
   },
-  {
-    path: 'results',
-    label: 'Results',
-  },
-  {
+    {
     path: 'ipd',
     label: 'IPD',
-  }
+  },
+  {
+    path: 'sponsors',
+    label: 'Sponsors',
+  },
 ];

@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'theme-ui';
 import { StickyProvider } from '../contexts/app/app.provider';
 import theme from 'theme';
@@ -12,10 +12,19 @@ import Classification from '../sections/classification-demo';
 
 
 export default function IndexPage() {
-  const [selectedFilename, setSelectedFilename] = useState('IN Brain-0001.tiff');
+  const [selectedFilename, setSelectedFilename] = useState('IN Brain-0002.tiff');
+  const [selectedTask, setSelectedTask] = useState('LGG vs HGG Classification');
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page on load
+  }, []);
 
   const handleFilenameChange = (filename) => {
     setSelectedFilename(filename);
+  };
+
+  const handleTaskChange = (task) => {
+    setSelectedTask(task);
   };
   return (
     <ThemeProvider theme={theme}>
@@ -23,10 +32,10 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Histopathology" />
           <Banner />
-          <Visualize onFilenameChange={handleFilenameChange} />
+          <Visualize onFilenameChange={handleFilenameChange} onTaskChange={handleTaskChange} />
           <Patching />
           <Features />
-          <Classification  selectedFilename={selectedFilename}  />
+          <Classification  selectedFilename={selectedFilename} selectedTask={selectedTask}  />
         </Layout>
       </StickyProvider>
     </ThemeProvider>
