@@ -83,7 +83,7 @@ export default function Visualize({ onFilenameChange, onTaskChange }) {
                   src={iframeURL}
                   width="600"
                   height="450"
-                  style={{ border: '0' }}
+                  style={{ border: '0', maxWidth: '100%' }}
                   allowFullScreen=""
                   loading="lazy"
                 ></iframe>

@@ -39,7 +39,6 @@ export default function Header({ className }) {
                 duration={500}
                 key={i}
               >
-                {console.log(path)}
                 {label}
               </Link>
             ))}
@@ -47,7 +46,7 @@ export default function Header({ className }) {
 
           <Button
             className="donate__btn"
-            variant="secondary"
+            variant="primary"
             aria-label="Demo"
             onClick={() => {
               router.push('/demo');
